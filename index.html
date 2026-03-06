@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ResumeForge — ATS-Optimized Resume Builder</title>
+  <meta name="description"
+    content="Build a professional, ATS-friendly resume in minutes. Real-time feedback, keyword optimization, and beautiful templates used by successful candidates." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/styles.css" />
+</head>
+
+<body>
+  <!-- Landing Page -->
+  <div id="landing-page" class="landing-page">
+    <nav class="landing-nav">
+      <div class="nav-logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">ResumeForge</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#templates-section" class="nav-link">Templates</a>
+        <button class="btn-primary" id="landing-cta">Build My Resume →</button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-badge">🏆 Used by 50,000+ professionals</div>
+      <h1 class="hero-title">Build a Resume That<br /><span class="gradient-text">Beats ATS & Lands Interviews</span>
+      </h1>
+      <p class="hero-subtitle">Act as your personal HR expert. Get real-time ATS scoring, keyword optimization, and
+        professional templates reviewed by recruiters from top companies.</p>
+      <div class="hero-actions">
+        <button class="btn-primary btn-large" id="hero-cta">Start Building — It's Free →</button>
+        <button class="btn-ghost" id="view-templates-btn">View Templates</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">98%</span><span class="stat-label">ATS Pass Rate</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">3x</span><span class="stat-label">More Interviews</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5 min</span><span class="stat-label">To Build</span></div>
+      </div>
+    </section>
+
+    <section id="features" class="features-section">
+      <h2 class="section-title">Everything You Need to Get Hired</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>ATS Score Analyzer</h3>
+          <p>Get an instant 0–100 ATS compatibility score with a detailed breakdown across keywords, formatting, and
+            structure. Paste any job description to match instantly.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👁️</div>
+          <h3>Live Preview</h3>
+          <p>See your resume update in real-time as you type. What you see is exactly what recruiters receive — no
+            surprises.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💡</div>
+          <h3>Smart Suggestions</h3>
+          <p>Our AI-powered engine replaces weak verbs, suggests quantification, and flags missing sections that cost
+            candidates interviews.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📄</div>
+          <h3>5 Pro Templates</h3>
+          <p>Recruiter-approved templates for every industry — from tech to finance to creative roles. Each is
+            ATS-tested and WCAG-compliant.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔑</div>
+          <h3>Keyword Optimizer</h3>
+          <p>Paste a job description and instantly see which keywords are missing from your resume. Never get filtered
+            out by ATS again.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📤</div>
+          <h3>One-Click Export</h3>
+          <p>Download as PDF, export as clean HTML, or copy plain text for online application forms. Your data stays
+            private — everything runs in your browser.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="templates-section" class="templates-preview-section">
+      <h2 class="section-title">Templates That Get Results</h2>
+      <p class="section-subtitle">Professional designs tested against 200+ ATS systems</p>
+      <div class="template-preview-grid">
+        <div class="template-preview-card active-template">
+          <div class="template-thumb executive-thumb">
+            <div class="thumb-header"></div>
+            <div class="thumb-lines">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <span class="template-name">Executive</span>
+          <span class="template-tag">Traditional</span>
+        </div>
+        <div class="template-preview-card">
+          <div class="template-thumb modern-thumb">
+            <div class="thumb-sidebar"></div>
+            <div class="thumb-lines">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <span class="template-name">Modern</span>
+          <span class="template-tag">Two-Column</span>
+        </div>
+        <div class="template-preview-card">
+          <div class="template-thumb creative-thumb">
+            <div class="thumb-bold-header"></div>
+            <div class="thumb-lines">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <span class="template-name">Creative</span>
+          <span class="template-tag">Bold</span>
+        </div>
+        <div class="template-preview-card">
+          <div class="template-thumb minimal-thumb">
+            <div class="thumb-minimal-line"></div>
+            <div class="thumb-lines">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <span class="template-name">Minimal</span>
+          <span class="template-tag">Clean</span>
+        </div>
+        <div class="template-preview-card">
+          <div class="template-thumb tech-thumb">
+            <div class="thumb-tech-header"></div>
+            <div class="thumb-grid">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <span class="template-name">Tech</span>
+          <span class="template-tag">Developer</span>
+        </div>
+        <div class="template-preview-card">
+          <div class="template-thumb devops-thumb">
+            <div class="thumb-devops-header"></div>
+            <div class="thumb-lines">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <span class="template-name">DevOps</span>
+          <span class="template-tag">GitHub Dark</span>
+        </div>
+        <div class="template-preview-card">
+          <div class="template-thumb fullstack-thumb">
+            <div class="thumb-fullstack-header"></div>
+            <div class="thumb-fs-body">
+              <div class="thumb-fs-main">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="thumb-fs-side">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <span class="template-name">Full-Stack</span>
+          <span class="template-tag">Two-Column</span>
+        </div>
+      </div>
+      <button class="btn-primary btn-large" id="start-from-templates">Start With a Template →</button>
+    </section>
+
+    <footer class="landing-footer">
+      <div class="footer-logo">⚡ ResumeForge</div>
+      <p>Your data never leaves your browser. 100% private and free.</p>
+    </footer>
+  </div>
+
+  <!-- App Builder Shell -->
+  <div id="app" class="app hidden">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">ResumeForge</span>
+      </div>
+
+      <div class="step-nav">
+        <div class="step-nav-item active" data-step="1" id="step-nav-1">
+          <div class="step-number">1</div>
+          <div class="step-info"><span class="step-title">Personal Info</span><span class="step-desc">Contact
+              details</span></div>
+        </div>
+        <div class="step-nav-item" data-step="2" id="step-nav-2">
+          <div class="step-number">2</div>
+          <div class="step-info"><span class="step-title">Summary</span><span class="step-desc">Professional
+              headline</span></div>
+        </div>
+        <div class="step-nav-item" data-step="3" id="step-nav-3">
+          <div class="step-number">3</div>
+          <div class="step-info"><span class="step-title">Experience</span><span class="step-desc">Work history</span>
+          </div>
+        </div>
+        <div class="step-nav-item" data-step="4" id="step-nav-4">
+          <div class="step-number">4</div>
+          <div class="step-info"><span class="step-title">Education</span><span class="step-desc">Degrees & certs</span>
+          </div>
+        </div>
+        <div class="step-nav-item" data-step="5" id="step-nav-5">
+          <div class="step-number">5</div>
+          <div class="step-info"><span class="step-title">Skills</span><span class="step-desc">Technical & soft</span>
+          </div>
+        </div>
+        <div class="step-nav-item" data-step="6" id="step-nav-6">
+          <div class="step-number">6</div>
+          <div class="step-info"><span class="step-title">Projects & Awards</span><span class="step-desc">Stand
+              out</span></div>
+        </div>
+      </div>
+
+      <!-- ATS Score Ring -->
+      <div class="ats-widget">
+        <div class="ats-ring-container">
+          <svg class="ats-ring" viewBox="0 0 120 120" width="120" height="120">
+            <circle class="ring-bg" cx="60" cy="60" r="50" />
+            <circle class="ring-fill" id="ats-ring-fill" cx="60" cy="60" r="50" stroke-dasharray="314.16"
+              stroke-dashoffset="314.16" />
+          </svg>
+          <div class="ats-score-display">
+            <span class="ats-number" id="ats-score-number">0</span>
+            <span class="ats-label">ATS Score</span>
+          </div>
+        </div>
+        <div class="ats-grade" id="ats-grade">Start filling your resume</div>
+      </div>
+
+      <div class="sidebar-actions">
+        <button class="sidebar-btn" id="btn-export" title="Export Resume">📤 Export</button>
+        <button class="sidebar-btn" id="btn-templates" title="Change Template">🎨 Template</button>
+        <button class="sidebar-btn" id="btn-home" title="Back to Home">🏠 Home</button>
+      </div>
+    </aside>
+
+    <!-- Main Form Area -->
+    <main class="form-area">
+      <div class="form-header">
+        <div class="form-header-left">
+          <h2 class="form-step-title" id="form-step-title">Personal Information</h2>
+          <p class="form-step-desc" id="form-step-desc">Let's start with the basics</p>
+        </div>
+        <div class="form-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="progress-text" id="progress-text">Step 1 of 6</span>
+        </div>
+      </div>
+
+      <!-- Step Forms -->
+      <div id="form-steps-container" class="form-steps-container">
+
+        <!-- Step 1: Personal Info -->
+        <div class="form-step" data-step="1" id="step-1">
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="full-name">Full Name <span class="required">*</span></label>
+              <input class="form-input" type="text" id="full-name" placeholder="e.g. Alexandra Johnson"
+                autocomplete="name" />
+              <span class="form-hint">Use your full legal name as it appears on LinkedIn</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="job-title">Professional Title <span class="required">*</span></label>
+              <input class="form-input" type="text" id="job-title" placeholder="e.g. Senior Software Engineer" />
+              <span class="form-hint">Match the exact title from the job posting</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address <span class="required">*</span></label>
+              <input class="form-input" type="email" id="email" placeholder="alexandra@email.com"
+                autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number <span class="required">*</span></label>
+              <input class="form-input" type="tel" id="phone" placeholder="+1 (555) 123-4567" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="location">Location</label>
+              <input class="form-input" type="text" id="location" placeholder="San Francisco, CA (or Remote)" />
+              <span class="form-hint">City and state is enough — don't include full address</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="linkedin">LinkedIn URL</label>
+              <input class="form-input" type="url" id="linkedin" placeholder="linkedin.com/in/yourusername" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="portfolio">Portfolio / GitHub</label>
+              <input class="form-input" type="url" id="portfolio" placeholder="github.com/yourhandle" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="website">Personal Website</label>
+              <input class="form-input" type="url" id="website" placeholder="yoursite.com" />
+            </div>
+          </div>
+          <div class="pro-tip">
+            <span class="tip-icon">💡</span>
+            <strong>Pro Tip:</strong> A matching professional title increases ATS hits by up to 40%. Make sure it
+            mirrors the job posting's exact wording.
+          </div>
+        </div>
+
+        <!-- Step 2: Summary -->
+        <div class="form-step hidden" data-step="2" id="step-2">
+          <div class="form-group">
+            <label class="form-label" for="summary">Professional Summary <span class="required">*</span></label>
+            <div class="textarea-wrapper">
+              <textarea class="form-textarea" id="summary" rows="6" maxlength="600"
+                placeholder="Write 3–5 sentences about your expertise, key achievements, and what you bring to this role..."></textarea>
+              <div class="char-counter"><span id="summary-count">0</span>/600</div>
+            </div>
+          </div>
+          <div class="summary-starters">
+            <p class="starters-label">✨ Starter templates — click to use:</p>
+            <div class="starter-chips">
+              <button class="starter-chip"
+                data-text="Results-driven {title} with {X}+ years of experience in {field}. Proven track record of {key achievement}. Skilled in {top skills}. Seeking to leverage expertise at {company type}.">Results-Driven
+                Professional</button>
+              <button class="starter-chip"
+                data-text="Innovative {title} with deep expertise in {technologies/field}. Built and deployed {notable projects}. Passionate about {area of interest} and delivering measurable business impact.">Innovative
+                Tech Leader</button>
+              <button class="starter-chip"
+                data-text="Strategic {title} with {X} years driving growth and efficiency across {industries}. Led teams of {size} and managed budgets of ${amount}. MBA from {school}. Committed to data-driven decision-making.">Strategic
+                Business Leader</button>
+              <button class="starter-chip"
+                data-text="Creative {title} specializing in {specialty}. Portfolio of {notable work} driving {measurable outcomes}. Expert in {tools}. Trusted by clients across {industry verticals}.">Creative
+                Professional</button>
+            </div>
+          </div>
+          <div class="keyword-jd-section">
+            <div class="jd-header">
+              <h4>🔑 Job Description Keyword Matcher</h4>
+              <span class="jd-badge">Boost your ATS score</span>
+            </div>
+            <textarea class="form-textarea jd-textarea" id="job-description" rows="5"
+              placeholder="Paste the job description here to see which keywords you're missing in your resume..."></textarea>
+            <button class="btn-secondary" id="btn-analyze-jd">Analyze Keywords →</button>
+            <div class="keyword-results hidden" id="keyword-results">
+              <div class="keyword-group">
+                <h5>✅ Keywords Found in Your Resume</h5>
+                <div class="keyword-chips" id="keywords-found"></div>
+              </div>
+              <div class="keyword-group">
+                <h5>❌ Missing Keywords — Add These</h5>
+                <div class="keyword-chips missing" id="keywords-missing"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pro-tip">
+            <span class="tip-icon">💡</span>
+            <strong>Pro Tip:</strong> ATS systems scan for exact keyword matches. Including 6–10 keywords from the job
+            description can increase your pass rate by over 60%.
+          </div>
+        </div>
+
+        <!-- Step 3: Experience -->
+        <div class="form-step hidden" data-step="3" id="step-3">
+          <div id="experience-list" class="entries-list"></div>
+          <button class="btn-add-entry" id="btn-add-experience">+ Add Work Experience</button>
+          <div class="pro-tip">
+            <span class="tip-icon">💡</span>
+            <strong>Pro Tip:</strong> Use the CAR formula (Challenge, Action, Result) and start each bullet with a
+            strong action verb. Add numbers wherever possible — percentages, team sizes, revenue impact.
+          </div>
+        </div>
+
+        <!-- Step 4: Education -->
+        <div class="form-step hidden" data-step="4" id="step-4">
+          <div id="education-list" class="entries-list"></div>
+          <button class="btn-add-entry" id="btn-add-education">+ Add Education</button>
+          <div class="pro-tip">
+            <span class="tip-icon">💡</span>
+            <strong>Pro Tip:</strong> Include GPA only if it's 3.5 or higher. List relevant coursework if you're a
+            recent graduate. Certifications count — add them here too.
+          </div>
+        </div>
+
+        <!-- Step 5: Skills -->
+        <div class="form-step hidden" data-step="5" id="step-5">
+          <div class="skills-intro">
+            <p>Add your skills in categories. ATS systems parse skills sections specifically — make sure to include
+              exact tool names and technologies mentioned in the job posting.</p>
+          </div>
+          <div class="skills-categories">
+            <div class="skills-category-card">
+              <h4 class="skills-cat-title">🛠️ Technical Skills</h4>
+              <div class="skills-tag-input-wrapper">
+                <div class="skills-tags" id="technical-skills-tags"></div>
+                <input class="skills-tag-input" type="text" id="technical-skills-input"
+                  placeholder="Type a skill and press Enter (e.g. Python, React, SQL)..." />
+              </div>
+              <div class="suggested-skills" id="suggested-technical">
+                <span class="suggest-label">Suggestions:</span>
+              </div>
+            </div>
+            <div class="skills-category-card">
+              <h4 class="skills-cat-title">🤝 Soft Skills</h4>
+              <div class="skills-tag-input-wrapper">
+                <div class="skills-tags" id="soft-skills-tags"></div>
+                <input class="skills-tag-input" type="text" id="soft-skills-input"
+                  placeholder="Type a skill and press Enter (e.g. Leadership, Communication)..." />
+              </div>
+            </div>
+            <div class="skills-category-card">
+              <h4 class="skills-cat-title">🌍 Languages</h4>
+              <div class="skills-tag-input-wrapper">
+                <div class="skills-tags" id="language-skills-tags"></div>
+                <input class="skills-tag-input" type="text" id="language-skills-input"
+                  placeholder="e.g. English (Native), Spanish (Fluent)..." />
+              </div>
+            </div>
+            <div class="skills-category-card">
+              <h4 class="skills-cat-title">🏅 Tools & Platforms</h4>
+              <div class="skills-tag-input-wrapper">
+                <div class="skills-tags" id="tools-skills-tags"></div>
+                <input class="skills-tag-input" type="text" id="tools-skills-input"
+                  placeholder="e.g. Jira, Figma, AWS, Docker..." />
+              </div>
+            </div>
+          </div>
+          <div class="pro-tip">
+            <span class="tip-icon">💡</span>
+            <strong>Pro Tip:</strong> List skills exactly as they appear in the job description. "JavaScript" and "JS"
+            are different to an ATS. Aim for 10–20 relevant skills.
+          </div>
+        </div>
+
+        <!-- Step 6: Projects & Awards -->
+        <div class="form-step hidden" data-step="6" id="step-6">
+          <div class="section-toggle-group">
+            <h3 class="section-group-title">Projects</h3>
+            <div id="projects-list" class="entries-list"></div>
+            <button class="btn-add-entry" id="btn-add-project">+ Add Project</button>
+          </div>
+          <div class="section-toggle-group">
+            <h3 class="section-group-title">Awards & Certifications</h3>
+            <div id="awards-list" class="entries-list"></div>
+            <button class="btn-add-entry" id="btn-add-award">+ Add Award / Certification</button>
+          </div>
+          <div class="pro-tip">
+            <span class="tip-icon">💡</span>
+            <strong>Pro Tip:</strong> Projects demonstrate applied skills ATS systems can't ignore. Include a GitHub
+            link and quantify the impact (e.g., 10k downloads, $50k revenue).
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Navigation -->
+      <div class="form-nav-buttons">
+        <button class="btn-ghost" id="btn-prev" disabled>← Previous</button>
+        <div class="form-nav-center">
+          <button class="btn-secondary" id="btn-save">💾 Save</button>
+        </div>
+        <button class="btn-primary" id="btn-next">Next Step →</button>
+      </div>
+    </main>
+
+    <!-- Preview Panel -->
+    <aside class="preview-panel">
+      <div class="preview-header">
+        <h3>Live Preview</h3>
+        <div class="preview-controls">
+          <button class="preview-zoom" id="btn-zoom-out" title="Zoom Out">−</button>
+          <span class="zoom-level" id="zoom-level">75%</span>
+          <button class="preview-zoom" id="btn-zoom-in" title="Zoom In">+</button>
+        </div>
+      </div>
+      <div class="preview-container" id="preview-container">
+        <div class="resume-preview" id="resume-preview">
+          <!-- Resume content rendered here -->
+          <div class="empty-preview">
+            <div class="empty-preview-icon">📄</div>
+            <p>Start filling in your details to see your resume come to life!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Suggestions Panel -->
+      <div class="suggestions-panel" id="suggestions-panel">
+        <div class="suggestions-header">
+          <h4>💡 Improvement Suggestions</h4>
+          <span class="suggestion-count" id="suggestion-count">0</span>
+        </div>
+        <div class="suggestions-list" id="suggestions-list">
+          <div class="no-suggestions">Fill in your resume to get personalized suggestions.</div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Template Picker Modal -->
+  <div class="modal-overlay hidden" id="template-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Choose Your Template</h3>
+        <button class="modal-close" id="close-template-modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="template-grid" id="template-grid">
+          <div class="template-card active" data-template="executive">
+            <div class="template-preview executive-preview">
+              <div class="tp-header"></div>
+              <div class="tp-body">
+                <div class="tp-line"></div>
+                <div class="tp-line short"></div>
+                <div class="tp-line"></div>
+              </div>
+            </div>
+            <div class="template-card-info">
+              <span class="tc-name">Executive</span>
+              <span class="tc-desc">Traditional & clean</span>
+            </div>
+          </div>
+          <div class="template-card" data-template="modern">
+            <div class="template-preview modern-preview">
+              <div class="tp-sidebar"></div>
+              <div class="tp-body">
+                <div class="tp-line"></div>
+                <div class="tp-line short"></div>
+                <div class="tp-line"></div>
+              </div>
+            </div>
+            <div class="template-card-info">
+              <span class="tc-name">Modern</span>
+              <span class="tc-desc">Two-column sidebar</span>
+            </div>
+          </div>
+          <div class="template-card" data-template="creative">
+            <div class="template-preview creative-preview">
+              <div class="tp-bold-header"></div>
+              <div class="tp-body">
+                <div class="tp-line"></div>
+                <div class="tp-line short"></div>
+                <div class="tp-line"></div>
+              </div>
+            </div>
+            <div class="template-card-info">
+              <span class="tc-name">Creative</span>
+              <span class="tc-desc">Bold & expressive</span>
+            </div>
+          </div>
+          <div class="template-card" data-template="minimal">
+            <div class="template-preview minimal-preview">
+              <div class="tp-thin-line"></div>
+              <div class="tp-body">
+                <div class="tp-line"></div>
+                <div class="tp-line short"></div>
+                <div class="tp-line"></div>
+              </div>
+            </div>
+            <div class="template-card-info">
+              <span class="tc-name">Minimal</span>
+              <span class="tc-desc">White space mastery</span>
+            </div>
+          </div>
+          <div class="template-card" data-template="tech">
+            <div class="template-preview tech-preview">
+              <div class="tp-mono-header"></div>
+              <div class="tp-grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="template-card-info">
+              <span class="tc-name">Tech</span>
+              <span class="tc-desc">Developer-focused</span>
+            </div>
+          </div>
+          <div class="template-card" data-template="devops">
+            <div class="template-preview devops-preview">
+              <div class="tp-devops-prompt"></div>
+              <div class="tp-body">
+                <div class="tp-line"></div>
+                <div class="tp-line short"></div>
+                <div class="tp-line"></div>
+              </div>
+            </div>
+            <div class="template-card-info">
+              <span class="tc-name">DevOps</span>
+              <span class="tc-desc">GitHub dark theme</span>
+            </div>
+          </div>
+          <div class="template-card" data-template="fullstack">
+            <div class="template-preview fullstack-preview">
+              <div class="tp-fullstack-header"></div>
+              <div style="display:flex;gap:4px;padding:6px;flex:1;">
+                <div style="flex:1;display:flex;flex-direction:column;gap:4px;">
+                  <div class="tp-line"></div>
+                  <div class="tp-line"></div>
+                  <div class="tp-line short"></div>
+                </div>
+                <div style="width:28px;display:flex;flex-direction:column;gap:3px;">
+                  <div style="height:5px;background:#e0e7ff;border-radius:2px;"></div>
+                  <div style="height:5px;background:#e0e7ff;border-radius:2px;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="template-card-info">
+              <span class="tc-name">Full-Stack</span>
+              <span class="tc-desc">Indigo two-column</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Export Modal -->
+  <div class="modal-overlay hidden" id="export-modal">
+    <div class="modal modal-sm">
+      <div class="modal-header">
+        <h3>Export Your Resume</h3>
+        <button class="modal-close" id="close-export-modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="export-options">
+          <button class="export-option" id="export-pdf">
+            <span class="export-icon">📄</span>
+            <div class="export-info">
+              <strong>Print / Save as PDF</strong>
+              <span>Best for applications — opens print dialog</span>
+            </div>
+          </button>
+          <button class="export-option" id="export-html">
+            <span class="export-icon">🌐</span>
+            <div class="export-info">
+              <strong>Download HTML File</strong>
+              <span>Self-contained resume you can open anywhere</span>
+            </div>
+          </button>
+          <button class="export-option" id="export-text">
+            <span class="export-icon">📋</span>
+            <div class="export-info">
+              <strong>Copy Plain Text</strong>
+              <span>For pasting into online application forms</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notifications -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Print frame -->
+  <iframe id="print-frame" class="hidden" title="Print Resume"></iframe>
+
+  <script src="static/js/app.js" type="module"></script>
+</body>
+
+</html>
